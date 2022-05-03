@@ -1,0 +1,405 @@
+﻿*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;  
+}
+
+.grid-container{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (4, auto);   
+    
+}
+
+.header{
+    grid-column: 1/ span3;
+}
+.header .logo {
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent; 
+    transform: rotateX(50deg);
+}
+
+.header .menu{
+    
+    box-sizing: border-box;
+    background-color: wheat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.header .menu ul {
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight:bold;
+    list-style: none;
+    text-align: center;
+}
+.header .menu ul li{
+   display:flex;
+
+}
+
+.header .menu ul li a{
+    
+    color: black;   /*aplico flex al menú*/
+    padding: 10px;
+    margin: 0 10px;
+    position: relative;
+    text-decoration: none;
+}
+.header .menu ul li a:hover {
+    background-color:rgba(223, 207, 179, 0.857);
+    display: grid; /*agregué ahora*/
+    grid-template-columns: 20% 20% 20% 20%  20%;
+}
+
+.intro {
+ background-image: url(../assets/Imagenes/inicio.jpg) ;
+   background-color: rgb(216, 211, 191);
+   min-height: 400px;
+    padding: 20px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-column: 1 /span3;
+}
+/*Hago el iframe responsive*/
+.iframe-responsive{
+    top:0;
+    left: 0;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   border: 0;
+   
+}
+
+.intro .intro__title {
+    color: white;
+    background-color: transparent;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align-last: center;   
+} 
+.intro  h2{
+    color: white;
+    text-align-last: center;
+ }
+
+  /*----------------Estilo de pagina Como Llegar --------------------------------------*/
+
+.header-llegar{
+    grid-column: 1 / span 3;
+
+}
+ 
+.header-llegar .logo {
+    background-position: center;
+    justify-content: center;
+    display: flex;
+}
+.header-llegar .menu{
+    background-color: wheat;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;    
+}
+.header-llegar .menu ul {  
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight:bold;
+    list-style: none;
+    text-align: center;
+ }
+.header-llegar .menu ul li{
+    display:flex;
+}
+
+.header-llegar .menu ul li a{
+    color: black;
+    display: block;
+    padding: 10px;
+    margin: 0 10px;
+    text-decoration: none;   
+}
+.header-llegar .menu ul li a:hover {
+    background-color: rgba(224, 210, 190, 0.418);
+    display: grid; /*agregué ahora*/
+    grid-template-columns: 20% 10% 20% 20%  20%;
+}
+.intro .list ul li {
+    font-display: flex;
+    color: white;
+    list-style-type: none;
+    vertical-align: middle;
+    text-align: right;
+}
+/*-------------------Estilo de la solapa Contacto----------------------------------------------------*/
+.header-con .logo {
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.header-con .menu{
+    background-color: wheat;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    grid-column: 1 / 3;    
+}
+.header-con .menu ul {
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+}
+.header-con .menu ul li{
+   display: flex;
+}
+.header-con .menu ul li a{
+    color: black;
+    display: block;
+    padding: 20px 60px;
+    text-decoration: none;
+}
+.header-con .menu ul li a:hover {
+    background-color:rgba(223, 207, 179, 0.857);
+    display: flex; /*agregué ahora*/
+    grid-template-columns: 20% 10% 20% 20%  20%;
+}
+.intro {
+   background-image:url(../assets/Imagenes/inicio.jpg) ;
+}
+.intro .formu {
+    background-color: wheat;
+    /* min-height: 400px;*/
+     padding: 10px 20px;
+     text-align: center;
+     background-position: center;
+     background-size: cover;
+     display:flex;
+    flex-direction: column;
+     justify-content: flex-start;
+     border:solid; /**/
+     box-sizing: border-box;
+     margin-top: 0px;
+     margin: auto;
+     width: 450px;
+}
+.introformu .tit {
+     color:black(241, 154, 22, 0.918);
+     background-color: transparent;
+     font-size: 42px;
+    }
+/*--------------------estilo de la galeria------------------------*/
+
+.header-galeria{
+     grid-column: 1 /span3;
+}   
+.header-galeria .logo {
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.header-galeria .menu{
+    background-color: wheat;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-column: 1 /span3;
+    justify-content: center;
+}
+.header-galeria .menu ul {
+    font-family: 'Cormorant Garamond', serif;;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    display: flex;
+}
+.header-galeria .menu ul li{
+    display: flex;
+}
+.header-galeria .menu ul li a{
+    color: black;
+    display: block;
+    padding: 20px 60px;
+    text-decoration: none;
+    padding: 10px;
+}
+.header-galeria .menu ul li a:hover {
+    background-color: rgb(224, 193, 139);
+    display: grid;
+    grid-template-columns: 20% 10% 20% 20%  20%;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 500px;
+    padding: 20px;
+    grid-gap: 10px;
+    background-color: rgb(242, 210, 169);
+    margin: 0;
+    width: 100%;
+    grid-column: 1 / span 3;
+}
+.gallery__item {
+    position: relative;
+}
+.gallery__img{
+    width: 100% ;
+    height: 100% ;
+    object-fit: cover ;
+}
+.gallery__item:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.gallery__item:nth-child(2){
+    grid-row-start: span 2;
+}
+.gallery__item:nth-child(5){
+    grid-column-start:  span 2;
+
+}
+.gallery__item:nth-child(6){
+    grid-column-start:  span 3;
+}
+/*------------------estilos de servicios--------------*/
+
+.header-ser .logo {
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+nav {
+    background-color: wheat;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.header-ser nav ul {
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight:bold;
+    list-style: none;
+    text-align: center;
+}
+.header-ser nav ul li{
+    display:flex;
+}
+ .header-ser nav ul li a{
+    color: black;   /*aplico flex al menú*/
+     padding: 10px;
+     margin: 0 10px;
+     position: relative;
+     text-decoration: none;
+    }
+.header-ser nav ul li a:hover {
+    background-color: rgb(223, 207, 179, 0.857);
+    display: grid;
+    grid-template-columns: 20% 10% 20% 20%  20%;
+}
+.main{
+    margin:10px;
+}
+.containerInfo_servicios >div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 15%;
+   }
+.containerInfo_serviciosimg {
+    width: 50% 
+    
+ }
+.servicios_titlesContainer {
+    text-align: center;
+    padding: 30px 0;
+}
+.containerInfo_serviciosp { 
+    width: 50%;
+}
+/*-------Estilo de l segunda imagen-------*/
+.containerInfo_servicios1 >div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 15%;
+   }
+.containerInfo_serviciosimg {
+    width: 350px;
+ }
+.servicios_titlesContainer {
+    text-align: center;
+    padding: 30px 0;
+}
+.containerInfo_serviciosp { 
+    width: 50%;
+    margin: 30px;
+}
+
+
+.footer{
+    background: wheat;
+    width: 100%;
+    grid-column: 1 /  span3;
+}
+.footer p{
+    text-align: center;
+}
+
+.footer .sociales{
+    background: wheat ;
+    display: flex;
+    flex-direction: row;
+   justify-content:center;
+    flex-wrap: wrap;
+}
+.sociales a{
+    font-size: 25px;
+    color: black;
+    display: block;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    padding:  0 10px;
+}
+ 
+/*----Hago responsive mi pagina*/
+/*Mobile*/
+@media (max-width: 450px){
+    body{
+    background-color: rgb(250, 174, 43);
+    height: auto;  
+    width: auto;
+   }
+    
+}
+/*Desktop*/
+@media (min-width:961px){
+ body{
+    background-color: rgb(72, 87, 44);
+}
+}
+
+    
