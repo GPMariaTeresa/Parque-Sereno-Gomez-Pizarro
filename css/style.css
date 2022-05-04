@@ -384,6 +384,10 @@ nav {
     height: 30px;
     padding:  0 10px;
 }
+/*Aplico transiciones en iconos de redes sociales del footer*/
+.sociales a:hover {
+    filter: blur(2px);
+}
  
 /*----Hago responsive mi pagina*/
 /*Mobile*/
