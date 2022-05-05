@@ -245,7 +245,7 @@
     display: grid;
     grid-template-columns: 20% 10% 20% 20%  20%;
 }
-.gallery-container {
+/*.gallery-container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 500px;
@@ -277,6 +277,30 @@
 }
 .gallery__item:nth-child(6){
     grid-column-start:  span 3;
+}*/
+
+
+/* agrego*/
+
+
+.container .row .col-lg-4{
+    margin: 0;
+    padding: 25px;
+ }
+.row img{
+width: 100%;
+height: 250px;
+}
+.row img:hover{
+    border: 5px solid #f7f7f7;
+}
+.carousel-inner{
+    margin: 0;
+   
+}
+.carousel-item :active img{
+    width: 100%;
+    height: 200px;
 }
 /*------------------estilos de servicios--------------*/
 
@@ -399,11 +423,11 @@ nav {
    }
     
 }
-/*Desktop*/
+/*Desktop
 @media (min-width:961px){
  body{
     background-color: rgb(72, 87, 44);
 }
-}
+}*/
 
     
