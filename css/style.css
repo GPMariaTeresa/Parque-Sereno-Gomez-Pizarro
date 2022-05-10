@@ -97,7 +97,7 @@
 
 /* Animaciones*/
 
- .intro  h2{
+ .intro h1,  h2{
     color: white;
     text-align-last: center;
    /*Agregué animaciones */
