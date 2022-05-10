@@ -8,7 +8,8 @@
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat (4, auto);   
+    grid-template-rows: repeat (4, auto);
+ perspective: 700px;  /*aplico transformaciones*/   
     
 }
 
@@ -93,6 +94,32 @@
     color: white;
     text-align-last: center;
  }
+
+/* Animaciones*/
+
+ .intro  h2{
+    color: white;
+    text-align-last: center;
+   /*Agregué animaciones */
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ 
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+
+
+
+
 
   /*----------------Estilo de pagina Como Llegar --------------------------------------*/
 
